@@ -4,19 +4,19 @@ on:
       - master
 name: 🚀 Deploy website on push
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+    deploy_job:
     runs-on: ubuntu-latest
+    name: deploy
     steps:
         - name: Checkout
         uses: actions/checkout@v2
         - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          port: ${{ secrets.FTP_PORT }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          server-dir: /var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/
-          local_path: './*'
-          sftp_only: true
+            username: ${{ secrets.FTP_USERNAME }}
+            server: ${{ secrets.FTP_SERVER }}
+            port: ${{ secrets.FTP_PORT }}
+            local_path: './*'
+            remote_path: '/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/'
+            sftp_only: true
+            password: ${{ secrets.FTP_PASSWORD }}
