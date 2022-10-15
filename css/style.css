@@ -43,10 +43,12 @@ body {
 #header {
   display: flex;
   top: 0;
+  height: 2rem;
 }
 
 #footer {
   bottom: 0;
+  height: 1rem;
 }
 
 .xoo-wsc-cart-trigger {
@@ -187,15 +189,6 @@ a {
 
 #checkout {
   position: relative;
-  display: flex;
-  background-color: #aaa;
-}
-
-#checkout .mui-form {
-  min-height: 790px;
-}
-
-#checkout .mui-container {
   border-radius: 25px;
   border: black 1px solid;
   margin: auto;
