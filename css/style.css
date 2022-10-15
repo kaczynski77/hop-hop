@@ -9,21 +9,21 @@ body {
 }
 
 
-#sidebar-container  {
+#sidebar-container {
     position: absolute;
-        width: 660px;
-        display: flex;
-        background-color: white;
-        top: 0;
-        left: -660px;
-        height: 100%;
-        z-index: 999999;
-        display: block;
-        transition: 0.5s;
+    width: 660px;
+    display: flex;
+    background-color: white;
+    top: 0;
+    left: -660px;
+    height: 100%;
+    z-index: 999999;
+    display: block;
+    transition: 0.5s;
 }
 
 .sidebar-active #sidebar-container {
-transform: translate(660px, 0);
+    transform: translate(660px, 0);
 }
 
 .sidebar-active .opac {
@@ -37,16 +37,18 @@ transform: translate(660px, 0);
     opacity: 0.7;
 }
 
-.sidebar-hidden #sidebar-container  {
-transform: translate(-660px, 0);
+.sidebar-hidden #sidebar-container {
+    transform: translate(-660px, 0);
 }
 
 
 #header {
     display: flex;
     margin: 2rem 2rem 1rem;
+}
 
-
+#header, #footer {
+    position: fixed;
 }
 
 .xoo-wsc-cart-trigger {
@@ -201,18 +203,13 @@ a {
     margin-right: 1rem;
 }
 
-@media (min-width: 1200px) {
-    .mui-container {
-        max-width: 1800px;
-    }
 
-}
 
 * {
     transition: all 800ms ease-in-out !important;
 }
 
-:root {}
+
 
 #checkout {
     max-height: 100vh;
@@ -380,6 +377,38 @@ a {
     width: 100%;
 }
 
+
+
+
+
+@font-face {
+    font-family: "Futura Demic Italic";
+    src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Demic";
+    src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Book C";
+    src: url(../fonts/futurabookc.otf) format("truetype");
+}
+
+#checkout .mui-form legend,
+#checkout .fields {
+    font-family: 'Futura Demic';
+}
+
+#checkout .mui-select select {
+    color: #aaa;
+}
+
+#checkout .mui-select select option:first-of-type {
+    display: none;
+}
+
 @media (max-width: 1199px) {
     #checkout {
         width: 100vw;
@@ -449,37 +478,11 @@ a {
         width: 95%;
     }
 
-
-
 }
 
+@media (min-width: 1200px) {
+    .mui-container {
+        max-width: 1800px;
+    }
 
-
-
-@font-face {
-    font-family: "Futura Demic Italic";
-    src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
-}
-
-@font-face {
-    font-family: "Futura Demic";
-    src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
-}
-
-@font-face {
-    font-family: "Futura Book C";
-    src: url(../fonts/futurabookc.otf) format("truetype");
-}
-
-#checkout .mui-form legend,
-#checkout .fields {
-    font-family: 'Futura Demic';
-}
-
-#checkout .mui-select select {
-    color: #aaa;
-}
-
-#checkout .mui-select select option:first-of-type {
-    display: none;
 }
