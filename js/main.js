@@ -1,6 +1,6 @@
-const sidebar = document.querySelector('#sidebar-primary');
 
 const moveSidebar = () => {
+    const sidebar = document.querySelector('#sidebar-primary');
     sidebar.classList.toggle('sidebar-active');
     sidebar.classList.toggle('sidebar-hidden');
 }
