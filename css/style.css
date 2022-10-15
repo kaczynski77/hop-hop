@@ -1,321 +1,291 @@
 html {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 body {
-    text-align: left;
-    max-height: 100vh;
-    position: relative;
- 
+  text-align: left;
+  max-height: 100vh;
+  position: relative;
 }
 
-
 #sidebar-container {
-    position: absolute;
-    width: 660px;
-    display: flex;
-    background-color: white;
-    top: 0;
-    left: -660px;
-    height: 100%;
-    z-index: 999999;
-    display: block;
-    transition: 0.5s;
+  position: absolute;
+  width: 660px;
+  display: flex;
+  background-color: white;
+  top: 0;
+  left: -660px;
+  height: 100%;
+  z-index: 999999;
+  display: block;
+  transition: 0.5s;
 }
 
 .sidebar-active #sidebar-container {
-    transform: translate(660px, 0);
+  transform: translate(660px, 0);
 }
 
 .sidebar-active .opac {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    z-index: 999998;
-    opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 999998;
+  opacity: 0.7;
 }
 
 .sidebar-hidden #sidebar-container {
-    transform: translate(-660px, 0);
+  transform: translate(-660px, 0);
 }
-
 
 #header {
-    display: flex;
-    top:0;
+  display: flex;
+  top: 0;
 }
 
-
-#footer{
-    bottom: 0;
+#footer {
+  bottom: 0;
 }
 
 .xoo-wsc-cart-trigger {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-
 #main {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 a {
-    color: #34393e;
-    text-decoration: none;
+  color: #34393e;
+  text-decoration: none;
 }
 
 .woocommerce ul.products li.product .price {
-    color: #77a464;
-    display: block;
-    font-weight: 400;
-    margin-bottom: .5em;
-    font-size: 1.2em;
+  color: #77a464;
+  display: block;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .woocommerce nav.woocommerce-pagination ul {
-    border: none;
+  border: none;
 }
 
 .woocommerce .woocommerce-pagination ul.page-numbers li,
 .woocommerce-page .woocommerce-pagination ul.page-numbers li {
-    display: inline-block;
-    margin: 5px;
+  display: inline-block;
+  margin: 5px;
 }
 
 .woocommerce nav.woocommerce-pagination ul li span.current {
-    background: #337ab7;
-    color: #fff;
-    padding: 12px;
+  background: #337ab7;
+  color: #fff;
+  padding: 12px;
 }
 
 .woocommerce-pagination ul.page-numbers a.page-numbers {
-    color: #444;
-    padding: 12px;
-    margin: 0px;
-    background: #ddd;
+  color: #444;
+  padding: 12px;
+  margin: 0px;
+  background: #ddd;
 }
 
-
-
 .woocommerce div.product div.images.woocommerce-product-gallery {
-    opacity: 100 !important;
+  opacity: 100 !important;
 }
 
 .footer__bottom {
-    text-align: right;
-    margin-right: 4rem;
+  text-align: right;
+  margin-right: 4rem;
 }
-
-
 
 #main {
-    flex: 1;
+  flex: 1;
 }
 
-
-
 .woocommerce .woocommerce-ordering {
-    display: none;
+  display: none;
 }
 
 .woocommerce-result-count {
-    display: none;
+  display: none;
 }
 
 .page-title {
-    display: none;
+  display: none;
 }
 
-
-
-
 .xoo-wsc-basket {
-    display: none !important;
+  display: none !important;
 }
 
 .woocommerce ul.products.columns-3 li.product,
 .woocommerce-page ul.products.columns-3 li.product {
-    width: 100%;
+  width: 100%;
 }
 
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
-    margin: 0;
+  margin: 0;
 }
 
 .woocommerce ul.products {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
-
-
 .woocommerce ul.products li.product .button {
-    display: none;
+  display: none;
 }
 
 .woocommerce-LoopProduct-link {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .woocommerce ul.products li.product a img {
-    order: 1;
+  order: 1;
 }
 
 .woocommerce ul.products li.product a h2 {
-    order: 2;
+  order: 2;
 }
 
 .woocommerce ul.products li.product a span {
-    order: 3;
+  order: 3;
 }
 
-
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
-    padding: 0;
+  padding: 0;
 }
 
 .woocommerce ul.products li.product .price,
 .woocommerce-Price-currencySymbol {
-    color: black;
-    font-weight: 800;
+  color: black;
+  font-weight: 800;
 }
 
-#header>span:nth-child(1) {
-    margin-right: 3rem;
+#header > span:nth-child(1) {
+  margin-right: 3rem;
 }
 
-#header>span:nth-child(2) {
-    margin-right: 1rem;
+#header > span:nth-child(2) {
+  margin-right: 1rem;
 }
-
-
 
 * {
-    transition: all 800ms ease-in-out !important;
+  transition: all 800ms ease-in-out !important;
 }
 
-
-
 #checkout {
-   
-
-    display: flex;
-    background-color: #aaa;
+  position: relative;
+  display: flex;
+  background-color: #aaa;
 }
 
 #checkout .mui-form {
-    min-height: 790px;
+  min-height: 790px;
 }
 
 #checkout .mui-container {
-
-    border-radius: 25px;
-    border: black 1px solid;
-    margin: auto;
-    padding: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: #aaa;
-    max-width: 75rem !important;
-    background-color: white;
+  border-radius: 25px;
+  border: black 1px solid;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: #aaa;
+  max-width: 75rem !important;
+  background-color: white;
 }
 
 #checkout .close {
-    width: 100%;
-    text-align: right;
-    height: 20px;
-    margin-bottom: 1rem;
+  position: absolute;
+  right: 1rem;
+  height: 20px;
 }
 
 #checkout .fields {
-    max-width: 60rem;
-    column-count: 2;
-
-
+  max-width: 60rem;
+  column-count: 2;
 }
 
 #checkout .fields div {
-    width: 80%;
+  width: 80%;
 }
 
 #checkout .fields .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #checkout .row div {
-    max-width: 14.375rem;
-
-
-
+  max-width: 14.375rem;
 }
 
-#checkout .mui-textfield>input,
-#checkout .mui-textfield>textarea,
+#checkout .mui-textfield > input,
+#checkout .mui-textfield > textarea,
 #checkout .mui-select select {
-    border: 1px solid #aaa;
-    border-radius: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#checkout .mui-textfield>textarea {
-    padding: 0.875rem;
+#checkout .mui-textfield > textarea {
+  padding: 0.875rem;
 }
 
-#checkout input[type=text],
+#checkout input[type="text"],
 #checkout textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin: 8px 0;
-    box-sizing: border-box;
-    height: 2rem;
-    font-size: 1.25rem;
-    font-family: 'Futura Book C';
+  width: 100%;
+  padding: 0.5rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: "Futura Book C";
 }
 
 #checkout .mui-select select {
-    width: 100%;
-    padding-left: 0.5rem;
-    padding-top: 0.15rem;
-    margin: 8px 0;
-    box-sizing: border-box;
-    height: 2rem;
-    font-size: 1.25rem;
-    font-family: 'Futura Book C';
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-top: 0.15rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: "Futura Book C";
 }
 
 #checkout .mui-form legend {
-    font-size: 2.2rem;
-    color: black;
-    margin-bottom: 1.875rem;
-    ;
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 1.875rem;
 }
 
-#checkout .mui-select>label,
-#checkout .mui-textfield>label {
-    font-size: 1.125rem;
-    font-weight: 800;
-    color: black;
+#checkout .mui-select > label,
+#checkout .mui-textfield > label {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: black;
 }
 
 #checkout .fields div:first-child {
-    margin-right: 1.625rem;
+  margin-right: 1.625rem;
 }
 
 #checkout .mui-form {
-    padding-left: 4.625rem;
+  padding-left: 4.625rem;
 }
 
 #checkout .mui-textfield,
@@ -323,84 +293,77 @@ a {
 #checkout .cart_content,
 #checkout .price_total,
 #checkout .delivery {
-    margin-bottom: 2rem;
-    font-family: 'Futura Demic Italic';
+  margin-bottom: 2rem;
+  font-family: "Futura Demic Italic";
 }
 
 #checkout .price_total {
-    display: flex;
-    font-size: 1.25rem;
-    align-items: center;
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
 }
 
 #checkout .price_total h3 {
-    margin: 0;
+  margin: 0;
 }
 
 #checkout .price_total span {
-    align-self: flex-end;
-    margin-left: auto;
-}
-
-
-
-#checkout .mui-btn {
-    color: white;
-    background-color: black;
-    margin: auto;
-    text-align: center;
-    font-size: 1.5625rem;
+  align-self: flex-end;
+  margin-left: auto;
 }
 
 #checkout .mui-btn {
-    display: flex;
-    width: 320px;
-    justify-content: center;
-    min-height: 66px;
-    align-items: center;
-    font-family: 'Futura Book C';
-    margin-top: 6rem;
-    margin-left: 2rem;
+  color: white;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5625rem;
 }
 
-#checkout>.delivery {
-    display: flex;
+#checkout .mui-btn {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  min-height: 66px;
+  align-items: center;
+  font-family: "Futura Book C";
+  margin-top: 6rem;
+  margin-left: 2rem;
+}
+
+#checkout > .delivery {
+  display: flex;
 }
 
 #checkout .delivery span {
-    display: block;
-    width: 100%;
-}
-
-
-
-
-
-@font-face {
-    font-family: "Futura Demic Italic";
-    src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
+  display: block;
+  width: 100%;
 }
 
 @font-face {
-    font-family: "Futura Demic";
-    src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
+  font-family: "Futura Demic Italic";
+  src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
 }
 
 @font-face {
-    font-family: "Futura Book C";
-    src: url(../fonts/futurabookc.otf) format("truetype");
+  font-family: "Futura Demic";
+  src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Book C";
+  src: url(../fonts/futurabookc.otf) format("truetype");
 }
 
 #checkout .mui-form legend,
 #checkout .fields {
-    font-family: 'Futura Demic';
+  font-family: "Futura Demic";
 }
 
 #checkout .mui-select select {
-    color: #aaa;
+  color: #aaa;
 }
 
 #checkout .mui-select select option:first-of-type {
-    display: none;
+  display: none;
 }
-
