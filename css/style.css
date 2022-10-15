@@ -208,7 +208,6 @@ a {
 }
 
 #checkout .fields {
-  max-width: 60rem;
   column-count: 2;
 }
 
