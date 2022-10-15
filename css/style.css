@@ -189,7 +189,6 @@ a {
 #checkout {
   position: relative;
   border-radius: 25px;
-  border: ;
   margin: auto;
   padding: 0.5rem;
   display: flex;
@@ -285,7 +284,7 @@ a {
 #checkout .cart_content,
 #checkout .price_total,
 #checkout .delivery {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-family: "Futura Demic Italic";
 }
 
@@ -319,7 +318,7 @@ a {
   min-height: 66px;
   align-items: center;
   font-family: "Futura Book C";
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-left: 2rem;
 }
 
