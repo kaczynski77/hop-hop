@@ -15,5 +15,5 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: "./*"
+          localPath: "./"
           remotePath: "/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/"
