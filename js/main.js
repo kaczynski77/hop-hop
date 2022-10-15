@@ -5,6 +5,15 @@ const moveSidebar = () => {
     sidebar.classList.toggle('sidebar-hidden');
 }
 
+const closeCheckout = () => {
+    const checkoutModal = document.querySelector('#checkout');
+    checkoutModal.classList.add('hidden');
+}
+
+const checkoutControl = () => {
+  const x = document.querySelector('#checkout .close');
+    x.addEventListener('click', closeCheckout);
+}
 
 const sidebarControl = () => {
     

@@ -8,6 +8,10 @@ body {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 #sidebar-container {
   position: absolute;
   width: 660px;
