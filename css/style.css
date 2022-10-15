@@ -4,8 +4,9 @@ html {
 
 body {
     text-align: left;
-    min-height: 100vh;
-    position: relative
+    max-height: 100vh;
+    position: relative;
+    padding: 0 2rem;
 }
 
 
@@ -45,10 +46,15 @@ body {
 #header {
     display: flex;
     margin: 2rem 2rem 1rem;
+    top:0;
 }
 
 #header, #footer {
     position: fixed;
+}
+
+#footer{
+    bottom: 0;
 }
 
 .xoo-wsc-cart-trigger {
