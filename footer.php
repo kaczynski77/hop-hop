@@ -2,7 +2,7 @@
 
 <div id="footer" class="mui-container">
 
-    <h3 class='footer__bottom'>2022 Хоп-хоп</h3>
+    <span class='footer__bottom'>2022 Хоп-хоп</span>
 </div>
 </div>
 </div>

@@ -48,7 +48,7 @@ body {
 
 #footer {
   bottom: 0;
-  height: 1rem;
+  height: 2rem;
 }
 
 .xoo-wsc-cart-trigger {
@@ -197,7 +197,7 @@ a {
   border: #aaa 1px solid;
   max-width: 75rem !important;
   background-color: white;
-  height: calc(100%-3rem);
+  height: calc(100%-4rem);
 }
 
 #checkout .close {
