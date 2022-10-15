@@ -189,15 +189,16 @@ a {
 #checkout {
   position: relative;
   border-radius: 25px;
-  border: black 1px solid;
+  border: ;
   margin: auto;
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: #aaa;
+  border: #aaa 1px solid;
   max-width: 75rem !important;
   background-color: white;
+  height: calc(100%-3rem);
 }
 
 #checkout .close {
