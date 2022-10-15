@@ -1,5 +1,5 @@
 const sidebar = document.querySelector('#sidebar-primary');
-const sidebarOpac = document.querySelector('#sidebar-primary').children[1];
+const sidebarOpac = document.querySelector('#sidebar-primary span');
 
 const moveSidebar = () => {
     sidebar.classList.toggle('sidebar-active');
