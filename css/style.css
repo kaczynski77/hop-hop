@@ -51,6 +51,7 @@ body {
 
 #header, #footer {
     position: fixed;
+    width: 100%;
 }
 
 #footer{
