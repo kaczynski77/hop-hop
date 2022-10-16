@@ -50,16 +50,13 @@ body {
   display: flex;
   top: 0;
   height: 2rem;
+  position: sticky;
 }
 
 #footer {
   bottom: 0;
   height: 2rem;
-  text-align: left;
-}
-
-#header,
-#footer {
+  text-align: right;
   position: fixed;
   width: 100%;
 }
