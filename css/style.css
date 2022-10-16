@@ -4,10 +4,7 @@ html {
 
 body {
   text-align: left;
-  max-height: 100vh;
   position: relative;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .hidden {
@@ -57,7 +54,7 @@ body {
   bottom: 0;
   height: 2rem;
   text-align: right;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
@@ -339,6 +336,11 @@ a {
 #checkout .delivery span {
   display: block;
   width: 100%;
+}
+
+.mui-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 @font-face {
