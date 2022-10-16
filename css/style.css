@@ -368,21 +368,12 @@ a {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 544px) {
   .mui-container {
-    max-width: 1170px;
+    max-width: 570px;
   }
   #checkout {
-    max-width: 1170px;
-  }
-}
-
-@media (min-width: 992px) {
-  .mui-container {
-    max-width: 960px;
-  }
-  #checkout {
-    max-width: 960px;
+    max-width: 570px;
   }
 }
 
@@ -395,11 +386,20 @@ a {
   }
 }
 
-@media (min-width: 544px) {
+@media (min-width: 992px) {
   .mui-container {
-    max-width: 570px;
+    max-width: 960px;
   }
   #checkout {
-    max-width: 570px;
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mui-container {
+    max-width: 1170px;
+  }
+  #checkout {
+    max-width: 1170px;
   }
 }
