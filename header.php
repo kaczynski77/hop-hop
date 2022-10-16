@@ -96,5 +96,5 @@
                     <button type="submit" class="mui-btn mui-btn--raised">Заказать</button>
                 </div>
             </form>
-    </div>
-    </section>
+
+        </section>
