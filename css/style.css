@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
-.hidden {
+#checkout .hidden {
   display: none;
 }
 
@@ -195,7 +195,7 @@ a {
   border-radius: 25px;
   margin: auto;
   padding: 0.5rem;
-  display: flex;
+
   flex-wrap: wrap;
   flex-direction: column;
   border: #aaa 1px solid;
