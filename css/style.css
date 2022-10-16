@@ -197,7 +197,7 @@ a {
   position: absolute;
   border-radius: 25px;
   margin: auto;
-
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   border: #aaa 1px solid;
@@ -406,6 +406,6 @@ a {
     max-width: 1170px;
   }
   #checkout {
-    max-width: 1170px;
+    max-width: 1138px;
   }
 }
