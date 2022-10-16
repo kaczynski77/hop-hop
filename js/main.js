@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM ready');
     console.log(Date());
     sidebarControl();
+    checkoutControl();
 
 }, false);
 
