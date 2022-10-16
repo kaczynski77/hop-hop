@@ -194,7 +194,7 @@ a {
 }
 
 #checkout {
-  position: relative;
+  position: absolute;
   border-radius: 25px;
   margin: auto;
   padding: 0.5rem;
@@ -204,7 +204,7 @@ a {
   border: #aaa 1px solid;
   max-width: 75rem !important;
   background-color: white;
-  height: calc(100% - 4rem);
+  height: calc(100% - 6.5rem);
 }
 
 #checkout .close {
