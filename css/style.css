@@ -197,7 +197,7 @@ a {
   position: absolute;
   border-radius: 25px;
   margin: auto;
-  padding: 0.5rem;
+
   flex-wrap: wrap;
   flex-direction: column;
   border: #aaa 1px solid;
