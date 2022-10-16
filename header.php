@@ -5,7 +5,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="header" class="mui-container">
+    <div id="header">
         <span>Хоп-хоп</span>
         <span>Мужчина</span>
         <span>Женщина</span>
@@ -15,7 +15,7 @@
                         echo 'ajax is enabled';
                     } ?> -->
     </div>
-    <section id="checkout" class="mui-container">
+    <section id="checkout">
         <span class="close">X</span>
         <form class="mui-form">
             <legend>Детали заказа</legend>

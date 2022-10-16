@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-<div id="footer" class="mui-container">
+<div id="footer">
 
     <span class='footer__bottom'>2022 Хоп-хоп</span>
 </div>
