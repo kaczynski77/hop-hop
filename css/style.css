@@ -198,11 +198,9 @@ a {
   border-radius: 25px;
   margin: auto;
   padding: 0.5rem;
-
   flex-wrap: wrap;
   flex-direction: column;
   border: #aaa 1px solid;
-  max-width: 75rem !important;
   background-color: white;
   height: calc(100% - 6.5rem);
 }
@@ -235,7 +233,6 @@ a {
 #checkout .mui-select select {
   border: 1px solid #aaa;
   border-radius: 5px;
-
   box-sizing: border-box;
 }
 
@@ -369,4 +366,40 @@ a {
 
 #checkout .mui-select select option:first-of-type {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .mui-container {
+    max-width: 1170px;
+  }
+  #checkout {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mui-container {
+    max-width: 960px;
+  }
+  #checkout {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mui-container {
+    max-width: 740px;
+  }
+  #checkout {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 544px) {
+  .mui-container {
+    max-width: 570px;
+  }
+  #checkout {
+    max-width: 570px;
+  }
 }
