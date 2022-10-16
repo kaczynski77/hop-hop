@@ -387,6 +387,9 @@ a {
   #checkout {
     max-width: 740px;
   }
+  #checkout .fields {
+    column-count: 2;
+  }
 }
 
 @media (min-width: 992px) {
