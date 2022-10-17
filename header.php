@@ -10,6 +10,7 @@
             <div class="preloader__item"></div>
         </div>
     </div>
+    <?php get_sidebar('primary'); ?>
     <div class="mui-container">
         <div class="wrapper">
             <div id="header">
