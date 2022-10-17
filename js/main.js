@@ -44,7 +44,7 @@ const sidebarControl = () => {
 
 function customCheckout(event) {
    
-    var wp_ajax_url = "<?php echo site_url();?>/wp-admin/admin-ajax.php";
+    var wp_ajax_url = "/wp-admin/admin-ajax.php";
     var data = {
         action: 'getCheckoutPageContent',
         product_id: jQuery(event.target).data('productid'),
