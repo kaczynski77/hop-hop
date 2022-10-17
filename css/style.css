@@ -158,12 +158,9 @@ span {
 
 .xoo-wsc-cart-trigger {
   margin-left: auto;
-}
-
-.cart-icon span {
-  width: 1rem;
-  height: 1rem;
   background-image: var(--logo);
+  width: 2rem;
+  height: 2rem;
 }
 
 #main {
