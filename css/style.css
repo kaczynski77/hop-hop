@@ -17,6 +17,12 @@ span a {
   color: black;
 }
 
+h1,
+h2,
+h3 {
+  color: black;
+}
+
 /*preloader*/
 
 .preloader {
