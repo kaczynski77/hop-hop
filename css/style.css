@@ -12,9 +12,9 @@ body {
   position: relative;
 }
 
-a {
+span a {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
 
 /*preloader*/
