@@ -162,6 +162,7 @@ span {
   background-image: var(--cart-icon);
   width: 2rem;
   height: 2rem;
+  background-repeat: no-repeat;
 }
 
 #main {
