@@ -153,6 +153,7 @@ span {
   position: absolute;
   width: 100%;
   display: flex;
+  justify-content: end;
   max-width: 1440px;
 }
 
