@@ -220,6 +220,8 @@ a {
 
 #main {
   flex: 1;
+  flex-direction: column-reverse;
+  display: flex;
 }
 
 .woocommerce .woocommerce-ordering {
