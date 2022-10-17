@@ -514,3 +514,11 @@ a {
     max-width: 1138px;
   }
 }
+@media (min-width: 1400px) {
+  .mui-container {
+    max-width: 1380px;
+  }
+  #checkout {
+    max-width: 1138px;
+  }
+}
