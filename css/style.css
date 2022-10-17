@@ -59,8 +59,12 @@ body {
 }
 /*preloader*/
 
-.hidden {
+.chekout-hidden {
   display: none;
+}
+
+.chekout-active {
+  display: flex;
 }
 
 #sidebar-container {
@@ -251,7 +255,6 @@ a {
   position: absolute;
   border-radius: 25px;
   margin: auto;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   border: #aaa 1px solid;
