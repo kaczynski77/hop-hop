@@ -28,8 +28,7 @@ function customCheckout(event) {
     };
 
     jQuery.post(wp_ajax_url, data, function(content) {
-        jQuery("#checkOutPageContent").html(content);
-        jQuery("#checkoutModal").modal('show');
+        alert('checkout');
 
     });
 }

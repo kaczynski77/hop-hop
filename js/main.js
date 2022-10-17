@@ -23,6 +23,8 @@ const closeCheckout = () => {
 const checkoutControl = () => {
   const x = document.querySelector('#checkout .close');
     x.addEventListener('click', closeCheckout);
+    const checkoutBtn = document.querySelector('.xoo-wsc-ft-btn-checkout');
+    checkoutBtn.addEventListener('click', customCheckout)
 }
 
 const sidebarControl = () => {
@@ -40,6 +42,21 @@ const sidebarControl = () => {
     
 }
 
+function customCheckout(event) {
+    event.preventDefault();
+    var wp_ajax_url = "<?php echo site_url();?>/wp-admin/admin-ajax.php";
+    var data = {
+        action: 'getCheckoutPageContent',
+        product_id: jQuery(event.target).data('productid'),
+        quantity: 1
+    };
+
+    jQuery.post(wp_ajax_url, data, function(content) {
+        alert('checkout');
+
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
     console.log('DOM ready');
@@ -47,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
     preloaderControl();
     sidebarControl();
     checkoutControl();
+
+
 
 }, false);
 
