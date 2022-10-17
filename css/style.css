@@ -21,8 +21,8 @@ body {
 
 .preloader__row {
   position: relative;
-  top: 40%;
-  left: 50%;
+  top: calc(50% - 151px);
+  left: calc(50% - 134px);
   width: 134px;
   height: 151px;
   margin-top: -35px;
