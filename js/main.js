@@ -23,7 +23,7 @@ const displayCheckout = () => {
 const checkoutControl = () => {
   const x = document.querySelector('#checkout .close');
     x.addEventListener('click', displayCheckout);
-    const checkoutBtn = document.querySelector('.xoo-wsc-ft-btn-checkout');
+    const checkoutBtn = document.querySelector('#header button');
     checkoutBtn.addEventListener('click', customCheckout)
 }
 
