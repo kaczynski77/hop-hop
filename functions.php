@@ -27,3 +27,38 @@ function hophop_fonts() {
 add_action( 'wp_enqueue_scripts', 'hophop_fonts' );
 add_action( 'wp_enqueue_scripts', 'hophop_styles' );
 add_action( 'wp_enqueue_scripts', 'hophop_scripts' );
+
+add_action( 'wp_ajax_getCheckoutPageContent', 'getCheckoutPageContentCallBack' );
+add_action( 'wp_ajax_nopriv_getCheckoutPageContent', 'getCheckoutPageContentCallBack' );
+
+    function getCheckoutPageContentCallBack() {
+
+
+        $product_id        = absint( $_POST['product_id'] );
+        $quantity          = absint( $_POST['quantity'] );
+        $product_status    = get_post_status( $product_id );
+        $passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity );
+
+        if ( $passed_validation && WC()->cart->add_to_cart( $product_id, $quantity ) && 'publish' === $product_status ) {
+
+            do_action( 'woocommerce_ajax_added_to_cart', $product_id );
+            global $woocommerce;
+            $items = $woocommerce->cart->get_cart();
+
+            wc_setcookie( 'woocommerce_items_in_cart', count( $items ) );
+            wc_setcookie( 'woocommerce_cart_hash', md5( json_encode( $items ) ) );
+            do_action( 'woocommerce_set_cart_cookies', true );
+
+            define( 'WOOCOMMERCE_CHECKOUT', true );
+            echo do_shortcode('[woocommerce_checkout]');
+
+
+        } else {
+
+            echo "Something went wrong, please try again later.";
+        }
+
+        die();
+    }
+
+    
