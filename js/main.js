@@ -16,7 +16,8 @@ const moveSidebar = () => {
 
 const closeCheckout = () => {
     const checkoutModal = document.querySelector('#checkout');
-    checkoutModal.classList.add('hidden');
+    checkoutModal.classList.toggle('checkout-hidden');
+    checkoutModal.classList.toggle('checkout-active');
 }
 
 const checkoutControl = () => {

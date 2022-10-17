@@ -23,7 +23,7 @@
                         echo 'ajax is enabled';
                     } ?> -->
             </div>
-            <section id="checkout">
+            <section id="checkout" class="checkout-hidden">
                 <span class="close">X</span>
                 <form class="mui-form">
                     <legend>Детали заказа</legend>
