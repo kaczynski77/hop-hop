@@ -54,7 +54,7 @@ h3 {
   margin-top: calc(var(--preloader-logo-height) / 2 * -1);
   text-align: center;
   animation: preloader-bounce 2s infinite ease-in-out;
-  background-image: url(../images/hop-hop-logo.svg);
+  background-image: url(../images/hop-hop-logo.png);
 }
 
 @keyframes preloader-rotate {
