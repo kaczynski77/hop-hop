@@ -2,7 +2,7 @@
     <div id="sidebar-container">
         <div class='men'>
             <span>
-                <a href='<?php echo get_site_url()?>/shop/men/poncho/'>Пончо
+                <a href='<?php echo get_site_url()?>/shop/men/poncho/'>Пончо</a>
             </span>
         </div>
 
