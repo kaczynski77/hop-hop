@@ -23,8 +23,8 @@ const displayCheckout = () => {
 const checkoutControl = () => {
   const x = document.querySelector('#checkout .close');
     x.addEventListener('click', displayCheckout);
-
-   
+    const checkoutBtn = document.querySelector('#header button');
+    checkoutBtn.addEventListener('click', customCheckout)
 }
 
 const sidebarControl = () => {
@@ -52,7 +52,7 @@ function customCheckout(event) {
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {
-        displayCheckout();      
+      
         jQuery("#checkOutPageContent").html(content);
   });
      
