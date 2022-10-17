@@ -170,6 +170,10 @@ span {
   margin-bottom: 50px;
 }
 
+#main .related {
+  display: none;
+}
+
 a {
   color: #34393e;
   text-decoration: none;
