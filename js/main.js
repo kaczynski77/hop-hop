@@ -50,19 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 }, false);
 
-function customCheckout(event){
-            var wp_ajax_url="https://xn----0tbbcc5ad.xn--p1ai/wp-admin/admin-ajax.php";
-            var data = {
-                action: 'getCheckoutPageContent',
-                product_id: jQuery(event.target).data('productid'),
-                quantity: 1
-            };
 
-            jQuery.post( wp_ajax_url, data, function(content) {
-                jQuery("#checkOutPageContent").html(content);
-                jQuery("#checkoutModal").modal('show');
-
-            });
-        }
 
 
