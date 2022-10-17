@@ -51,10 +51,10 @@ function customCheckout(event) {
         quantity: 1
     };
 
-    jQuery.post(wp_ajax_url, data, function(){});
-    jQuery("#checkOutPageContent").html(content);
-    jQuery("#checkoutModal").modal('show');
-    displayCheckout();
+    jQuery.post(wp_ajax_url, data, function (content) {
+        jQuery("#checkOutPageContent").html(content);
+  });
+      displayCheckout();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
