@@ -43,7 +43,7 @@ const sidebarControl = () => {
 }
 
 function customCheckout(event) {
-    displayCheckout();
+    
     var wp_ajax_url = "/wp-admin/admin-ajax.php";
     var data = {
         action: 'getCheckoutPageContent',
@@ -52,6 +52,7 @@ function customCheckout(event) {
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {
+        displayCheckout();
         jQuery("#checkOutPageContent").html(content);
   });
      
