@@ -37,7 +37,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: var(--preloader-logo-wight);
+  width: var(--preloader-logo-width);
   height: var(--preloader-logo-height);
   margin-left: calc(var(--preloader-logo-width) / 2 * -1);
   margin-top: calc(var(--preloader-logo-height) / 2 * -1);
