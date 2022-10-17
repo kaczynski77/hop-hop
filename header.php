@@ -23,4 +23,4 @@
                         echo 'ajax is enabled';
                     } ?> -->
             </div>
-            <?php get_checkout(); ?>
+            <?php include 'checkout.php';?>
