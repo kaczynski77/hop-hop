@@ -8,8 +8,9 @@ add_action('after_setup_theme', 'customtheme_add_woocommerce_support');
 
 
 function hophop_styles() {
+    wp_enqueue_style( 'mui', get_template_directory_uri() . '/css/mui.min.css' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(),  filemtime( get_stylesheet_directory_uri() . '/css/style.css'));
-	wp_enqueue_style( 'mui', get_template_directory_uri() . '/css/mui.min.css' );
+	
     
 }
 function hophop_scripts() {
