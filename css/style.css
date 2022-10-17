@@ -92,6 +92,15 @@ h3 {
   display: flex;
 }
 
+.woocommerce-page #sidebar {
+  display: none;
+}
+
+.woocommerce div.product {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 #sidebar-container {
   position: absolute;
   width: 660px;
