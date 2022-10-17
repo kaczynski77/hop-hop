@@ -21,11 +21,19 @@ body {
 
 .preloader__row {
   position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.preloader__item {
+  position: relative;
   top: calc(50% - 151px);
   left: calc(50% - 134px);
   width: 134px;
   height: 151px;
-
   text-align: center;
   animation: preloader-bounce 2s infinite ease-in-out;
   background-image: url(../images/hop-hop-logo.png);
