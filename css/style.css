@@ -253,7 +253,7 @@ a {
 .woocommerce ul.products {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .woocommerce ul.products li.product .button {
@@ -285,6 +285,15 @@ a {
 .woocommerce-Price-currencySymbol {
   color: black;
   font-weight: 800;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  float: left;
+  margin: 0 3.8% 2.992em 0;
+  padding: 0;
+  position: relative;
+  margin-left: 0;
 }
 
 #header > span:nth-child(1) {
