@@ -31,10 +31,10 @@ body {
 .preloader__item {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  left: calc(50% - 134px);
+
   top: 50%;
   transform: translateY(-50%);
+  transform: translateX(-50%);
   width: 134px;
   height: 151px;
   text-align: center;
