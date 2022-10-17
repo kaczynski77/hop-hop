@@ -52,6 +52,8 @@ function customCheckout(event) {
     };
 
     jQuery.post(wp_ajax_url, data, function(){});
+    jQuery("#checkOutPageContent").html(content);
+    jQuery("#checkoutModal").modal('show');
     displayCheckout();
 }
 
