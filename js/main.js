@@ -14,7 +14,7 @@ const moveSidebar = () => {
     sidebar.classList.toggle('sidebar-hidden');
 }
 
-const closeCheckout = () => {
+const displayCheckout = () => {
     const checkoutModal = document.querySelector('#checkout');
     checkoutModal.classList.toggle('checkout-hidden');
     checkoutModal.classList.toggle('checkout-active');
@@ -22,7 +22,7 @@ const closeCheckout = () => {
 
 const checkoutControl = () => {
   const x = document.querySelector('#checkout .close');
-    x.addEventListener('click', closeCheckout);
+    x.addEventListener('click', displayCheckout);
     const checkoutBtn = document.querySelector('.xoo-wsc-ft-btn-checkout');
     checkoutBtn.addEventListener('click', customCheckout)
 }
@@ -43,7 +43,7 @@ const sidebarControl = () => {
 }
 
 function customCheckout(event) {
-    event.preventDefault();
+   
     var wp_ajax_url = "<?php echo site_url();?>/wp-admin/admin-ajax.php";
     var data = {
         action: 'getCheckoutPageContent',

@@ -1,5 +1,7 @@
 <section id="checkout" class="checkout-hidden">
-    <span class="close">X</span>
+
+
+    <!--<span class="close">X</span>
     <form class="mui-form">
         <legend>Детали заказа</legend>
         <div class="fields">
@@ -77,6 +79,24 @@
             </div>
             <button type="submit" class="mui-btn mui-btn--raised">Заказать</button>
         </div>
-    </form>
+    </form>-->
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="checkoutModalLabel">Checkout</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="checkOutPageContent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
