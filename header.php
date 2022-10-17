@@ -17,8 +17,9 @@
                 <span><a href='<?php echo get_site_url()?>'>Хоп-хоп</a></span>
                 <span>Мужчина</span>
                 <span>Женщина</span>
-                <div class="xoo-wsc-cart-trigger">Trigger Side Cart</div>
-                <!-- <?php $ajax_cart_en = 'yes' === get_option('woocommerce_enable_ajax_add_to_cart');
+                <span><button onclick='customCheckout(event)'>test</button></test>
+                    <div class="xoo-wsc-cart-trigger">Trigger Side Cart</div>
+                    <!-- <?php $ajax_cart_en = 'yes' === get_option('woocommerce_enable_ajax_add_to_cart');
                     if ($ajax_cart_en) {
                         echo 'ajax is enabled';
                     } ?> -->
