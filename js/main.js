@@ -29,7 +29,7 @@ const sidebarControl = () => {
     
     let men = document.querySelector('#header').children[1];
     let women = document.querySelector('#header').children[2];
-    let sidebarOpac = document.querySelector('#sidebar-primary span');
+    let sidebarOpac = document.querySelector('#sidebar-primary .opac');
     let targets = [men, women];
 
     targets.forEach(function (target, index) { 
