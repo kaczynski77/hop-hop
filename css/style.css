@@ -28,17 +28,17 @@ body {
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
-  animation: preloader-rotate 2s infinite linear;
+  /* animation: preloader-rotate 2s infinite linear;*/
 }
 
 .preloader__item {
   position: absolute;
   display: inline-block;
   top: 0;
-  background-color: #337ab7;
+  background-color: white;
   border-radius: 100%;
-  width: 35px;
-  height: 35px;
+  width: 125px;
+  height: 125px;
   animation: preloader-bounce 2s infinite ease-in-out;
   background-image: url("../images/hop-hop-logo.png");
 }
