@@ -1,3 +1,8 @@
+:root {
+  --preloader-logo-width: 134px;
+  --preloader-logo-height: 151px;
+}
+
 html {
   margin: 0 !important;
 }
@@ -30,13 +35,10 @@ body {
 
 .preloader__item {
   position: absolute;
-  left: 50%;
-
   top: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  width: 134px;
-  height: 151px;
+  left: 50%;
+  margin-left: calc(--preloader-logo-width / 2 * -1);
+  margin-top: calc(--preloader-logo-height / 2 * -1);
   text-align: center;
   animation: preloader-bounce 2s infinite ease-in-out;
   background-image: url(../images/hop-hop-logo.png);
