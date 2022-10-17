@@ -59,11 +59,11 @@ body {
 }
 /*preloader*/
 
-.chekout-hidden {
+.checkout-hidden {
   display: none;
 }
 
-.chekout-active {
+.checkout-active {
   display: flex;
 }
 
