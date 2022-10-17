@@ -14,7 +14,7 @@
     <div class="mui-container">
         <div class="wrapper">
             <div id="header">
-                <span>Хоп-хоп</span>
+                <span><a href='<?php echo get_site_url()?>/category/men/poncho'>Хоп-хоп</a></span>
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <div class="xoo-wsc-cart-trigger">Trigger Side Cart</div>
