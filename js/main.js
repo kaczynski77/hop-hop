@@ -1,4 +1,12 @@
-
+const preloaderControl = () => {
+    window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+}
 
 const moveSidebar = () => {
     const sidebar = document.querySelector('#sidebar-primary');
@@ -35,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('DOM ready');
     console.log(Date());
+    preloaderControl();
     sidebarControl();
     checkoutControl();
 

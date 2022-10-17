@@ -42,6 +42,32 @@ body {
   animation: preloader-bounce 2s infinite ease-in-out;
   background-image: url("../images/hop-hop-logo.png");
 }
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 /*preloader*/
 
 .hidden {
