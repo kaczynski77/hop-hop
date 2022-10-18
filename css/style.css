@@ -267,7 +267,7 @@ a {
 
 .woocommerce ul.products {
   display: flex;
-  justify-content: space-between;
+
   gap: 4px;
 }
 
@@ -304,11 +304,10 @@ a {
 
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
-  float: left;
-  flex: 1;
   padding: 0;
   position: relative;
   margin-left: 0;
+  width: 24%;
 }
 
 #header > span:nth-child(1) {
