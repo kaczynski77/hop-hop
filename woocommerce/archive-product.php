@@ -35,6 +35,7 @@ do_action( 'woocommerce_before_main_content' );
     <span id="filter-zip">На молнии</span>
     <span id="filter-oversize">Оверсайз</span>
     <span id="filter-colab">Колаборация</span>
+    <?php echo do_shortcode('[products]')?>
 </div>
 
 <header class="woocommerce-products-header">
