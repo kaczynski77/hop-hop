@@ -58,23 +58,39 @@ function customCheckout(event) {
      
 }
 
+function customCheckout(event) {
+    
+    var wp_ajax_url = "/wp-admin/admin-ajax.php";
+    var data = {
+        action: 'getCheckoutPageContent',
+        product_id: jQuery(event.target).data('productid'),
+        quantity: 1
+    };
 
-    function wc_load_all_products() {
-        jQuery("#wc-products").html("");
-        var wp_ajax_url = "/wp-admin/admin-ajax.php";
-        jQuery.ajax({
-            type: "POST",
-            url: wp_ajax_url,
-            data: {action: 'get_wc_products'},
-            success: function (data) {
-                var products = jQuery.parseJSON(data);
-                jQuery('#wc-products').html(products.product_html);
-            }
-        });
-        return false;
-    }
+    jQuery.post(wp_ajax_url, data, function (content) {
+      
+        jQuery("#checkOutPageContent").html(content);
+  });
+     
+}
 
-//jQuery('#filter-zip').click(wc_load_all_products);
+function wcProducts() {
+    
+    var wp_ajax_url = "/wp-admin/admin-ajax.php";
+    var data = {
+        action: 'wcProducts',
+        attribute: 'zip'
+    };
+
+    jQuery.post(wp_ajax_url, data, function (content) {
+      
+        jQuery("#wc-products").html(content);
+  });
+     
+}
+
+  
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -85,8 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sidebarControl();
     checkoutControl();
 
-const filterZip = document.querySelector('#filter-zip');
-filterZip.addEventListener('click', wc_load_all_products);
+jQuery('#filter-zip').click(wcProducts);
 
 }, false);
 
