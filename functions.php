@@ -36,3 +36,44 @@ function getCheckoutPageContentCallBack() {
     echo do_shortcode('[woocommerce_checkout]');
     die();
 }
+
+add_action('wp_ajax_get_refund_data', 'get_wc_products');
+add_action('wp_ajax_nopriv_get_refund_data','get_wc_products');
+
+     /**
+     * AJAX function for products.
+     */
+    function get_wc_products() {
+    $html="";
+    $tag1="zip";
+    $varition_args = array(
+            'post_type' => 'product',
+            'posts_per_page' => 10,
+            'tax_query'    => array(
+                  array(
+            'taxonomy' => 'product_tag',
+            'terms'    => array($tag1),
+            'field'    => 'slug',
+        ),
+            )
+        );
+        $variation_query = new WP_Query($varition_args);
+    
+
+
+    if ($variation_query->have_posts()) {
+            while ($variation_query->have_posts()) {
+                 $variation_query->the_post();
+                 global $product;
+                 $html.= '<tr>';
+                 $html.= '<td>'.get_the_ID().'</td>';
+                 $html.= '<td>'.get_the_title().'</td>';
+                 $html.= '<td>'.$product->get_price_html().'</td>';
+                 $html.= '</tr>';
+            }
+    }
+
+    //Returns records
+    $data = [];
+    $data['product_html'] = $html;
+    }

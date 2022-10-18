@@ -58,6 +58,22 @@ function customCheckout(event) {
      
 }
 
+jQuery('#filter-zip').click(wc_load_all_products);
+    function wc_load_all_orders() {
+        jQuery("#wc-products").html("");
+        
+        jQuery.ajax({
+            type: "POST",
+            url: ajax_details.ajax_url,
+            data: {action: 'get_wc_products'},
+            success: function (data) {
+                var products = jQuery.parseJSON(data);
+                jQuery('#wc-products').html(products.product_html);
+            }
+        });
+        return false;
+    }
+
 document.addEventListener('DOMContentLoaded', function () {
 
     console.log('DOM ready');
