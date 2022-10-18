@@ -135,6 +135,10 @@ h3 {
   transform: translate(-660px, 0);
 }
 
+.filter-nav {
+  order: 1;
+}
+
 #header {
   display: flex;
   top: 0;
