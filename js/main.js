@@ -58,7 +58,7 @@ function customCheckout(event) {
      
 }
 
-jQuery('#filter-zip').click(wc_load_all_products);
+
     function wc_load_all_products() {
         jQuery("#wc-products").html("");
 
@@ -73,6 +73,8 @@ jQuery('#filter-zip').click(wc_load_all_products);
         });
         return false;
     }
+
+    jQuery('#filter-zip').click(wc_load_all_products);
 
 document.addEventListener('DOMContentLoaded', function () {
 
