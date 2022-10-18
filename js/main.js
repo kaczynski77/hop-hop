@@ -59,7 +59,7 @@ function customCheckout(event) {
 }
 
 jQuery('#filter-zip').click(wc_load_all_products);
-    function wc_load_all_orders() {
+    function wc_load_all_products() {
         jQuery("#wc-products").html("");
 
         jQuery.ajax({
