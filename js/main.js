@@ -61,10 +61,10 @@ function customCheckout(event) {
 
     function wc_load_all_products() {
         jQuery("#wc-products").html("");
-
+        var wp_ajax_url = "/wp-admin/admin-ajax.php";
         jQuery.ajax({
             type: "POST",
-            url: ajax_details.ajax_url,
+            url: wp_ajax_url,
             data: {action: 'get_wc_products'},
             success: function (data) {
                 var products = jQuery.parseJSON(data);
@@ -74,7 +74,8 @@ function customCheckout(event) {
         return false;
     }
 
-    jQuery('#filter-zip').click(wc_load_all_products);
+//jQuery('#filter-zip').click(wc_load_all_products);
+document.querySelector('#filter-zip').addEventListener('click', wc_load_all_products);
 
 document.addEventListener('DOMContentLoaded', function () {
 
