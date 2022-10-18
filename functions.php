@@ -42,7 +42,7 @@ add_action( 'wp_ajax_nopriv_wcProducts', 'wcProductsCallBack' );
 
 function wcProductsCallBack(){
     echo do_shortcode('[products limit="1"]');
-    die()''
+    die()'';
 }
 
 
