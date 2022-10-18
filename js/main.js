@@ -75,7 +75,8 @@ function customCheckout(event) {
     }
 
 //jQuery('#filter-zip').click(wc_load_all_products);
-document.querySelector('#filter-zip').addEventListener('click', wc_load_all_products);
+const filterZip = document.querySelector('#filter-zip');
+filterZip.addEventListener('click', wc_load_all_products);
 
 document.addEventListener('DOMContentLoaded', function () {
 
