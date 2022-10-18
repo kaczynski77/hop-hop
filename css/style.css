@@ -139,6 +139,10 @@ h3 {
   order: 1;
 }
 
+.filter-nav div {
+  cursor: pointer;
+}
+
 #header {
   display: flex;
   top: 0;
