@@ -27,7 +27,38 @@ get_header( 'shop' );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
-echo do_shortcode('[yith_wcan_filters slug="draft-preset"]')
+
+
+function getProductsByCat($theCat) {
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => 50,
+        'tax_query' => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'id',
+                    'terms' => $theCat
+                )
+            )
+        );
+    $loop = new WP_Query( $args );
+    if ( $loop->have_posts() ) {
+        while ( $loop->have_posts() ) : $loop->the_post();
+
+            wc_get_template_part( 'content', 'product' );
+
+        endwhile;
+    } else {
+        return false;
+    }
+
+    return true;
+}
+
+getProductsByCat('men');
+
+
+
 ?>
 <header class="woocommerce-products-header">
     <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
