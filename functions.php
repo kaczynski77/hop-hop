@@ -37,12 +37,14 @@ function getCheckoutPageContentCallBack() {
     die();
 }
 
-function wcProducts(){
+add_action( 'wp_ajax_wcProducts', 'wcProductsCallBack' );
+add_action( 'wp_ajax_nopriv_wcProducts', 'wcProductsCallBack' );
+
+function wcProductsCallBack(){
     echo do_shortcode('[products limit="1"]');
     die()''
 }
 
-add_action('wp_ajax_get_refund_data', 'get_wc_products');
-add_action('wp_ajax_nopriv_get_refund_data','get_wc_products');
+
 
    

@@ -83,7 +83,6 @@ function wcProducts() {
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {
-      
         jQuery("#wc-products").html(content);
   });
      
