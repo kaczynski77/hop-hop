@@ -102,6 +102,9 @@ document.addEventListener('DOMContentLoaded', function () {
     checkoutControl();
 
 jQuery('#filter-zip').click(wcProducts);
+jQuery('#filter-oversize').click(wcProducts);
+jQuery('#filter-colab').click(wcProducts);
+jQuery('#filter-all').click(wcProducts);
 
 }, false);
 
