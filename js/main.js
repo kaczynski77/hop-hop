@@ -84,7 +84,7 @@ function wcProducts(event) {
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {
-        jQuery(".products").html(content);
+        jQuery("#wc-products").html(content);
   });
      
 }

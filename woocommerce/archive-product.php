@@ -64,6 +64,9 @@ if ( woocommerce_product_loop() ) {
 	 */
 	do_action( 'woocommerce_before_shop_loop' );
 
+?>
+<div id="wc-products">
+    <?php
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
@@ -80,7 +83,9 @@ if ( woocommerce_product_loop() ) {
 	}
 
 	woocommerce_product_loop_end();
-
+?>
+</div>
+<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop.
 	 *
