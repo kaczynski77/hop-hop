@@ -79,6 +79,7 @@ function wcProducts() {
     var wp_ajax_url = "/wp-admin/admin-ajax.php";
     var data = {
         action: 'wcProducts',
+        tag:'zip'
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {

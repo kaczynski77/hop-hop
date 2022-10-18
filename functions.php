@@ -41,7 +41,7 @@ add_action( 'wp_ajax_wcProducts', 'wcProductsCallBack' );
 add_action( 'wp_ajax_nopriv_wcProducts', 'wcProductsCallBack' );
 
 function wcProductsCallBack(){
-    echo do_shortcode('[products tag="zip"]');
+    echo do_shortcode('[products]');
     die();
 }
 
