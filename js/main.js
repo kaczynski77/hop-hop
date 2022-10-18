@@ -75,7 +75,7 @@ function customCheckout(event) {
 }
 
 function wcProducts(event) {
-    var tag = $(event.target).attr('tag');
+    var tag = event.target.getAttribute('tag')
     var wp_ajax_url = "/wp-admin/admin-ajax.php";
     var data = {
         type: "POST",
