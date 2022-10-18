@@ -32,9 +32,9 @@ do_action( 'woocommerce_before_main_content' );
 
 <div class="filter-nav">
     <div id="filter-all">Все</div>
-    <div id="filter-zip">На молнии</div>
-    <div id="filter-colab">Колаборация</div>
-    <div id="filter-oversize">Оверсайз</div>
+    <div id="filter-zip" tag='zip'>На молнии</div>
+    <div id="filter-colab" tag='colab'>Колаборация</div>
+    <div id="filter-oversize" tag='oversize'>Оверсайз</div>
 </div>
 
 <header class="woocommerce-products-header">

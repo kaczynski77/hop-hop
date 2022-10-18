@@ -74,13 +74,13 @@ function customCheckout(event) {
      
 }
 
-function wcProducts() {
-    
+function wcProducts(event) {
+    var tag = event.target.attr('tag');
     var wp_ajax_url = "/wp-admin/admin-ajax.php";
     var data = {
         type: "POST",
         action: 'wcProducts',
-        tag:'zip'
+        tag: tag
     };
 
     jQuery.post(wp_ajax_url, data, function (content) {
