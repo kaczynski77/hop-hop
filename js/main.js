@@ -23,8 +23,8 @@ const displayCheckout = () => {
 const checkoutControl = () => {
   const x = document.querySelector('#checkout .close');
     x.addEventListener('click', displayCheckout);
-    const checkoutBtn = document.querySelector('#header button');
-    checkoutBtn.addEventListener('click', customCheckout)
+   // const checkoutBtn = document.querySelector('#header button');
+  //  checkoutBtn.addEventListener('click', customCheckout)
 }
 
 const sidebarControl = () => {
@@ -61,7 +61,7 @@ function customCheckout(event) {
 jQuery('#filter-zip').click(wc_load_all_products);
     function wc_load_all_orders() {
         jQuery("#wc-products").html("");
-        
+
         jQuery.ajax({
             type: "POST",
             url: ajax_details.ajax_url,
