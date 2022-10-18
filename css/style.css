@@ -137,6 +137,7 @@ h3 {
 
 .filter-nav {
   order: 1;
+  display: flex;
 }
 
 .filter-nav div {
