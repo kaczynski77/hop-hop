@@ -11,7 +11,7 @@
         </div>
     </div>
     <?php get_sidebar('primary'); ?>
-    <div class="mui-container">
+    <div class="container">
         <div class="wrapper">
             <div id="header">
                 <span><a href='<?php echo get_site_url()?>'>Хоп-хоп</a></span>

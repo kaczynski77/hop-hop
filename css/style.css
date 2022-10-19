@@ -497,7 +497,7 @@ a {
 }
 
 @media (min-width: 544px) {
-  .mui-container {
+  .container {
     width: 100vw;
     padding: 8px;
   }
