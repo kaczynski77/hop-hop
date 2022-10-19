@@ -3,6 +3,7 @@
   --logo: url(../images/hophop-logo.svg);
   --preloader-logo-width: 134px;
   --preloader-logo-height: 151px;
+  --container-width: calc(100vw - 16px);
 }
 
 html {
@@ -158,15 +159,25 @@ span {
   color: black;
 }
 
+.container {
+  width: var(--container-width);
+}
+
 #footer {
   bottom: 0;
   height: 2.5rem;
   text-align: right;
   position: absolute;
-  width: 100%;
+
   display: flex;
   justify-content: end;
-  max-width: 1440px;
+  width: var(--container-width);
+}
+
+#header,
+#footer,
+.container {
+  padding: 8px;
 }
 
 .xoo-wsc-cart-trigger {
@@ -497,10 +508,6 @@ a {
 }
 
 @media (min-width: 544px) {
-  .container {
-    width: calc(100vw-16px);
-    padding: 8px;
-  }
   #checkout {
     max-width: 570px;
   }
