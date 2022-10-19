@@ -21,10 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-<?php global $product; ?>
-<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
 
-<h1>Test</h1>
 
 <?php
 		/**
@@ -38,7 +35,10 @@ get_header( 'shop' ); ?>
 
 <?php while ( have_posts() ) : ?>
 <?php the_post(); ?>
+<?php global $product; ?>
+<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
 
+<h1>Test</h1>
 <?php wc_get_template_part( 'content', 'single-product' ); ?>
 
 <?php endwhile; // end of the loop. ?>
