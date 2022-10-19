@@ -33,10 +33,12 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-<?php while ( have_posts() ) : ?>
+
 <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
 
 <h1>Test</h1>
+<?php while ( have_posts() ) : ?>
+
 <?php the_post(); ?>
 <?php global $product; ?>
 
