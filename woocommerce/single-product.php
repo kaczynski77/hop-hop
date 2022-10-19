@@ -21,6 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<?php global $product; ?>
+<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
+
+<h1>Test</h1>
+
 <?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -39,8 +44,7 @@ get_header( 'shop' ); ?>
 <?php endwhile; // end of the loop. ?>
 
 
-<?php global $product; ?>
-<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
+
 
 
 <?php
