@@ -168,7 +168,7 @@ span {
   height: 2.5rem;
   text-align: right;
   position: absolute;
-
+  left: 0;
   display: flex;
   justify-content: end;
   width: var(--container-width);
