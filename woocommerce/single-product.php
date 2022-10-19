@@ -38,6 +38,11 @@ get_header( 'shop' ); ?>
 
 <?php endwhile; // end of the loop. ?>
 
+
+<?php global $product; ?>
+<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
+
+
 <?php
 		/**
 		 * woocommerce_after_main_content hook.
