@@ -268,7 +268,7 @@ a {
 .woocommerce ul.products {
   display: flex;
 
-  gap: 4px;
+  gap: 8px;
 }
 
 .woocommerce ul.products li.product .button {
@@ -498,7 +498,8 @@ a {
 
 @media (min-width: 544px) {
   .mui-container {
-    max-width: 570px;
+    width: 100vw;
+    padding: 8px;
   }
   #checkout {
     max-width: 570px;
@@ -509,9 +510,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .mui-container {
-    max-width: 740px;
-  }
   #checkout {
     max-width: 740px;
   }
@@ -521,26 +519,17 @@ a {
 }
 
 @media (min-width: 992px) {
-  .mui-container {
-    max-width: 960px;
-  }
   #checkout {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .mui-container {
-    max-width: 1170px;
-  }
   #checkout {
     max-width: 1138px;
   }
 }
 @media (min-width: 1400px) {
-  .mui-container {
-    max-width: 1380px;
-  }
   #checkout {
     max-width: 1138px;
   }
