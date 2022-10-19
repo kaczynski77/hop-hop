@@ -139,7 +139,9 @@ h3 {
 .filter-nav {
   order: 1;
   display: flex;
-  gap: 16px;
+  gap: 30px;
+  font-size: 20px;
+  margin-left: 50px;
 }
 
 .filter-nav div {
@@ -278,8 +280,7 @@ a {
 
 .woocommerce ul.products {
   display: flex;
-
-  gap: 8px;
+  justify-content: space-around;
 }
 
 .woocommerce ul.products li.product .button {
