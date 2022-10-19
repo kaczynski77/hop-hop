@@ -498,7 +498,7 @@ a {
 
 @media (min-width: 544px) {
   .container {
-    width: 100vw;
+    width: calc(100vw-16px);
     padding: 8px;
   }
   #checkout {
