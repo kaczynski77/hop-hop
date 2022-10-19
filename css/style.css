@@ -6,6 +6,21 @@
   --container-width: calc(100vw - 16px);
 }
 
+@font-face {
+  font-family: "Futura Demic Italic";
+  src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Demic";
+  src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Book C";
+  src: url(../fonts/futurabookc.otf) format("truetype");
+}
+
 html {
   margin: 0 !important;
 }
@@ -13,6 +28,7 @@ html {
 body {
   text-align: left;
   position: relative;
+  font-family: "Futura Demic";
 }
 
 span a {
@@ -478,21 +494,6 @@ a {
 .mui-container {
   position: relative;
   min-height: 100vh;
-}
-
-@font-face {
-  font-family: "Futura Demic Italic";
-  src: url(../fonts/FUTURADEMIC-ITALIC.TTF) format("truetype");
-}
-
-@font-face {
-  font-family: "Futura Demic";
-  src: url(../fonts/FUTURADEMIC.TTF) format("truetype");
-}
-
-@font-face {
-  font-family: "Futura Book C";
-  src: url(../fonts/futurabookc.otf) format("truetype");
 }
 
 #checkout .mui-form legend,
