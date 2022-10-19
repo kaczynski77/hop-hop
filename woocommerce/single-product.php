@@ -34,9 +34,7 @@ get_header( 'shop' ); ?>
 	?>
 
 
-<img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
 
-<h1>Test</h1>
 <?php while ( have_posts() ) : ?>
 
 <?php the_post(); ?>
