@@ -3,7 +3,7 @@
 <head>
     <?php wp_head();
     $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    echo '<script>const actualLink = '.$actual_link.'</script>';
+    echo '<script>const actualLink = '.$actual_link.'; console.log(actualLink);</script>';
     ?>
 
 
