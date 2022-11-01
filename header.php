@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <?php wp_head();
+    <?php wp_head();?>
 
-   $term_title = single_term_title('', 0);
-    ?>
+  <?php single_term_title('You are viewing the section: '); ?>
+
 
 
 </head>
