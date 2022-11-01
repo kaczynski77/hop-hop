@@ -2,7 +2,6 @@
 
 <head>
     <?php wp_head(); ?>
-    <meta http-equiv="refresh" content="7"/>
 
 
 </head>
