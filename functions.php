@@ -46,15 +46,6 @@ function wcProductsCallBack(){
     die();
 }
 
-/**
- * Change the breadcrumb separator
- */
-add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
-function wcc_change_breadcrumb_delimiter( $defaults ) {
-	// Change the breadcrumb delimeter from '/' to '>'
-	$defaults['delimiter'] = ' &gt; ';
-	return $defaults;
-}
 
 /**
  * Change several of the breadcrumb defaults
@@ -67,7 +58,7 @@ function jk_woocommerce_breadcrumbs() {
             'wrap_after'  => '</nav>',
             'before'      => '',
             'after'       => '',
-            'home'        => _x( 'breadcrumb', 'woocommerce' ),
+            'home'        => _x( 'woocommerce' ),
         );
 }
 
