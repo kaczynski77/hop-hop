@@ -2,8 +2,8 @@
 
 <head>
     <?php wp_head();
-    global $post;
-    $categories = get_the_category();
+
+   $term_title = single_term_title('', 0);
     ?>
 
 
@@ -23,9 +23,7 @@
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <span>
-                    <?php if ( ! empty( $categories ) ) {
-	echo esc_html( $categories[0]->name );
-}?>
+                    <?php echo $term_title;?>
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
                 <div class="xoo-wsc-cart-trigger cart-icon"><span></span></div>
