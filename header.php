@@ -2,6 +2,9 @@
 
 <head>
     <?php wp_head(); ?>
+    <meta http-equiv="refresh" content="3/>
+
+
 </head>
 
 <body <?php body_class(); ?>>
