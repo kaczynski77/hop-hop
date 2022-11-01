@@ -55,11 +55,12 @@ function my_get_cat() {
 
         $nterms = get_the_terms( $post->ID, 'product_tag'  );
 
-        foreach ($terms  as $term  ) {                    
+        foreach ($nterms  as $term  ) {                    
 
             $product_cat_id = $term->term_id;              
 
-            $product_cat_name = $term->name;            
+            $product_cat_name = $term->name; 
+                  
 
             break;
 
