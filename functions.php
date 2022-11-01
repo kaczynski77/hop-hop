@@ -60,30 +60,15 @@ function my_get_cat() {
             $product_cat_id = $term->term_id;              
 
             $product_cat_name = $term->name; 
-                  
-
-            $sub_cat = get_terms(
-
-    array(
-
-        'taxonomy'   => 'category',
-
-        'hide_empty' => true,
-
-        'number'     => $per_page,
-
-        'offset'     => $offset,
-
-        'parent'     => $product_cat_id
-
-    )
-    );
+            
+print_r($term);
 
             break;
 
         }
 
-       print_r($sub_cat) ;
+       echo $product_cat_name;
+       
 
 }
 // Register shortcode
