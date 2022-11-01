@@ -15,5 +15,8 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: "./"
+          localPath: "./sidebar-primary.php"
           remotePath: "/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/"
+          additionalPaths: {"./woocommerce/single-product.php":"/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/woocommerce/"}
+          additionalPaths: {"./css/style.css":"/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/css/"}
+          additionalPaths: {"./header.php":"/var/www/xn----0tbbcc5ad.xn--p1ai/public_html/wp-content/themes/hop-hop/"}
