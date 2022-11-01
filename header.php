@@ -22,7 +22,7 @@
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <span>Test cat 
-                      <?php echo do_shortcode('[get_category]'); ?>
+                      <?php woocommerce_breadcrumb() ?>
 
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
