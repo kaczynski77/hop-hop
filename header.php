@@ -2,7 +2,7 @@
 
 <head>
     <?php wp_head();
-    global $post 
+    global $post;
     $categories = get_the_category();
     ?>
 
