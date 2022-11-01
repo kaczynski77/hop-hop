@@ -58,7 +58,7 @@ $args = array(
     'parent' => $parent_id
 );
 $terms = get_terms( $args );   
-echo $terms;
+echo $terms[0];
 
        
 }
