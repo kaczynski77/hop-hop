@@ -3,7 +3,6 @@
 <head>
     <?php wp_head();?>
 
-  <?php single_term_title('You are viewing the section: '); ?>
 
 
 
@@ -23,7 +22,8 @@
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <span>
-                    <?php echo $term_title;?>
+                      <?php single_term_title('You are viewing the section: '); ?>
+
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
                 <div class="xoo-wsc-cart-trigger cart-icon"><span></span></div>
