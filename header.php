@@ -22,7 +22,7 @@
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <span>Test cat 
-                      <?php echo do_shortcode('[this_product_category_name]'); ?>
+                      <?php echo do_shortcode('[get_category]'); ?>
 
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->

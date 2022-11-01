@@ -46,12 +46,30 @@ function wcProductsCallBack(){
     die();
 }
 
-function this_product_category_name() {
-    $cat_id = (int) str_replace('-product_cat', '', $_GET['really_curr_tax']);
-    $product_cat = get_term_by( 'id', $cat_id, 'product_cat' );
-    echo $product_cat->name;
+// The shortcode function
+function my_get_cat() { 
+  
+   global $post;
+
+       $terms = get_the_terms( $post->ID, 'product_cat' );
+
+        $nterms = get_the_terms( $post->ID, 'product_tag'  );
+
+        foreach ($terms  as $term  ) {                    
+
+            $product_cat_id = $term->term_id;              
+
+            $product_cat_name = $term->name;            
+
+            break;
+
+        }
+
+       echo $product_cat_name;
+
 }
-add_shortcode( 'this_product_category_name', 'this_product_category_name' );
+// Register shortcode
+add_shortcode('get_category', 'my_get_cat'); 
 
 
 
