@@ -21,7 +21,7 @@
                 <span><a href='<?php echo get_site_url()?>'>Хоп-хоп</a></span>
                 <span>Мужчина</span>
                 <span>Женщина</span>
-                <span>
+                <span>test
                       <?php single_term_title('You are viewing the section: '); ?>
 
 </span>
