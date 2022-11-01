@@ -61,13 +61,15 @@ function my_get_cat() {
 
             $product_cat_name = $term->name; 
             
-print_r($term);
+          echo  woocommerce_get_product_subcategories( $product_cat_id );
+
+            
 
             break;
 
         }
 
-       echo $product_cat_name;
+      
        
 
 }

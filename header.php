@@ -21,8 +21,8 @@
                 <span><a href='<?php echo get_site_url()?>'>Хоп-хоп</a></span>
                 <span>Мужчина</span>
                 <span>Женщина</span>
-                <span>Test cat 
-                      <?php woocommerce_breadcrumb() ?>
+                <span>
+                      <?php echo do_shortcode('[get_category]'); ?>
 
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
