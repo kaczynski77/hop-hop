@@ -199,8 +199,7 @@ span {
   width: var(--container-width);
 }
 
-#header,
-#footer,
+
 .container {
   padding: 8px;
 }
