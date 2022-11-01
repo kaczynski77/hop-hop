@@ -46,35 +46,6 @@ function wcProductsCallBack(){
     die();
 }
 
-// The shortcode function
-function my_get_cat() { 
-  
-   global $post;
-
-       $terms = get_the_terms( $post->ID, 'product_cat' );
-
-        $nterms = get_the_terms( $post->ID, 'product_tag'  );
-
-        foreach ($terms  as $term  ) {                    
-
-            $product_cat_id = $term->term_id;              
-
-            $product_cat_name = $term->name; 
-            
-          echo  woocommerce_get_product_subcategories( $product_cat_id );
-
-            
-
-            break;
-
-        }
-
-      
-       
-
-}
-// Register shortcode
-add_shortcode('get_category', 'my_get_cat'); 
 
 
 
