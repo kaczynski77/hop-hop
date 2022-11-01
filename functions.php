@@ -47,21 +47,5 @@ function wcProductsCallBack(){
 }
 
 
-/**
- * Change several of the breadcrumb defaults
- */
-add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
-function jk_woocommerce_breadcrumbs() {
-    return array(
-            'delimiter'   => ' &gt; ',
-            'wrap_before' => '<nav class="woocommerce-breadcrumb" itemprop="breadcrumb">',
-            'wrap_after'  => '</nav>',
-            'before'      => '',
-            'after'       => '',
-            'home'        => _x( 'woocommerce' ),
-        );
-}
-
-
 
    
