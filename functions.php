@@ -46,6 +46,13 @@ function wcProductsCallBack(){
     die();
 }
 
+function this_product_category_name() {
+    $cat_id = (int) str_replace('-product_cat', '', $_GET['really_curr_tax']);
+    $product_cat = get_term_by( 'id', $cat_id, 'product_cat' );
+    echo $product_cat->name;
+}
+add_shortcode( 'this_product_category_name', 'this_product_category_name' );
+
 
 
    

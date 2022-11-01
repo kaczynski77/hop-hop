@@ -21,8 +21,8 @@
                 <span><a href='<?php echo get_site_url()?>'>Хоп-хоп</a></span>
                 <span>Мужчина</span>
                 <span>Женщина</span>
-                <span>newtest
-                      <?php single_term_title('You are viewing the section: '); ?>
+                <span>Test cat 
+                      <?php echo do_shortcode('[this_product_category_name]'); ?>
 
 </span>
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
