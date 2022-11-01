@@ -50,17 +50,41 @@ function wcProductsCallBack(){
 function my_get_cat() { 
   
    global $post;
- 
-   $parent_id = $post->ID;
-   $taxonomy = 'product_cat';
-$args = array(
-    'taxonomy' => $taxonomy,
-    'parent' => $parent_id
-);
-$terms = get_terms( $args );   
-echo $terms[0];
 
-       
+       $terms = get_the_terms( $post->ID, 'product_cat' );
+
+        $nterms = get_the_terms( $post->ID, 'product_tag'  );
+
+        foreach ($terms  as $term  ) {                    
+
+            $product_cat_id = $term->term_id;              
+
+            $product_cat_name = $term->name; 
+                  
+
+            $sub_cat = get_terms(
+
+    array(
+
+        'taxonomy'   => 'category',
+
+        'hide_empty' => true,
+
+        'number'     => $per_page,
+
+        'offset'     => $offset,
+
+        'parent'     => $product_cat_id
+
+    )
+    );
+
+            break;
+
+        }
+
+       print_r($sub_cat) ;
+
 }
 // Register shortcode
 add_shortcode('get_category', 'my_get_cat'); 
