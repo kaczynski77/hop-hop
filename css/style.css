@@ -533,23 +533,7 @@ a {
     column-count: 2;
   }
 
-  div.woocommerce-product-gallery > figure > div:nth-child(1) {
-    background-image: url(https://xn----0tbbcc5ad.xn--p1ai/wp-content/uploads/2022/10/poncho-proper-size.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-    margin-left: -8px;
-    margin-top: -8px;
-  }
-
-  div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images
-    > figure
-    > div:nth-child(1)
-    > a
-    > img {
-    display: none;
-  }
+ 
 }
 
 @media (min-width: 992px) {
