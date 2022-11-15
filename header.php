@@ -4,7 +4,7 @@
     <?php wp_head(); ?>
     <!-- <meta http-equiv="refresh" content="7"/> -->
 
-
+   <title> <?php wp_title()?></title>
 </head>
 
 <body <?php body_class(); ?>>

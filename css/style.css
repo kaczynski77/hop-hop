@@ -125,11 +125,11 @@ h3 {
 
 #sidebar-container {
   position: absolute;
-  width: 660px;
+  width: 34.8vw;
   display: flex;
   background-color: white;
   top: 0;
-  left: -660px;
+  left: -34.8vw;
   height: 100vh;
   z-index: 999999;
   display: block;
@@ -137,7 +137,7 @@ h3 {
 }
 
 .sidebar-active #sidebar-container {
-  transform: translate(660px, 0);
+  transform: translate(34.8vw, 0);
 }
 
 .sidebar-active .opac {
@@ -152,7 +152,7 @@ h3 {
 }
 
 .sidebar-hidden #sidebar-container {
-  transform: translate(-660px, 0);
+  transform: translate(-34.8vw, 0);
 }
 
 .filter-nav {
@@ -182,6 +182,10 @@ display: flex;
 background-position: center;
 }
 
+.woocommerce div.product form.cart .variations label {
+display: none;
+}
+
 #header {
   display: flex;
   top: 0;
@@ -203,6 +207,13 @@ span {
 
 .woocommerce .woocommerce-breadcrumb {
   margin-left: 16px;
+}
+
+.single .woocommerce-breadcrumb {
+  display: flex;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    justify-content: center;
 }
 
 #footer {
@@ -279,6 +290,9 @@ a {
 
 .woocommerce div.product div.images.woocommerce-product-gallery {
   opacity: 100 !important;
+      width: 50vw;
+      height: 100vh;
+      object-fit: cover;
 }
 
 .footer__bottom {
@@ -493,12 +507,26 @@ a {
   margin-left: auto;
 }
 
-#checkout .mui-btn {
-  color: white;
-  background-color: black;
-  margin: auto;
-  text-align: center;
-  font-size: 20px;
+#checkout .mui-btn, .woocommerce div.product form.cart .button{
+color: white;
+    background-color: black;
+    text-align: center;
+    /* margin-right: 60%; */
+    font-size: 20px;
+    width: 230px;
+}
+
+.woocommerce div.product form.cart .button:hover {
+  color:black;
+  background: white;
+}
+
+.woocommerce div.product form.cart div.quantity {
+    /* float: right; */
+    margin: 0 4px 0 0;
+    width: 230px;
+    text-align: right;
+    margin-bottom: 15px;
 }
 
 #checkout .mui-btn {
@@ -584,18 +612,107 @@ body.home {
   }
 }
 
-
-
-@media (min-width: 544px) {
-  #checkout {
-    max-width: 570px;
-  }
-  #checkout .fields {
-    column-count: 1;
-  }
+#sidebar-container .men {
+  display: flex;
+  justify-content: center;
+}
+#sidebar-container .men div {
+  display: flex;
+  flex-direction: column;
+      flex: 0.3;
 }
 
-@media (min-width: 768px) {
+#sidebar-container .header {
+  margin-bottom: 8.33vh;
+}
+
+
+.main-image {
+  width: 50%;
+}
+
+.main-image img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.woocommerce div.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_meta, .quantity {
+  display:none;
+}
+
+.product, .three-images {
+  display: flex;
+}
+
+.woocommerce-variation-add-to-cart {display: flex;
+flex-direction: column;}
+
+.three-images img {
+  width: calc(100%/3);
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.product .bottom {
+  display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.product .bottom .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product .bottom .info * {
+  width: 100%;
+}
+
+.two-images img {
+
+  width: calc(100%/3);
+
+}
+
+.two-images {
+  display: flex;
+  justify-content: center;
+
+  gap:125px
+}
+
+.info .description, .info .compound, .info .care {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-text {
+    font-family: "Futura Book C";
+
+  font-size: 14px;
+}
+
+.pictograms {
+  display: flex;
+}
+
+.summary {
+ padding-left: 100px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
   #checkout {
     max-width: 740px;
   }
@@ -606,19 +723,3 @@ body.home {
 
 }
 
-@media (min-width: 992px) {
-  #checkout {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #checkout {
-    max-width: 1138px;
-  }
-}
-@media (min-width: 1400px) {
-  #checkout {
-    max-width: 1138px;
-  }
-}
