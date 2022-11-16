@@ -22,6 +22,10 @@
                 <span>Мужчина</span>
                 <span>Женщина</span>
                 <?php endif; ?>
+               
+                <?php if (is_product()) woocommerce_breadcrumb(',');?>
+             
+
                 <!--<span><button onclick='customCheckout(event); displayCheckout();'>test</button></span>-->
                 <div class="xoo-wsc-cart-trigger cart-icon"><span></span></div>
                 <!-- <?php $ajax_cart_en = 'yes' === get_option('woocommerce_enable_ajax_add_to_cart');

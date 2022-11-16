@@ -19,6 +19,9 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+
+
+
 /**
  * Hook: woocommerce_before_single_product.
  *
@@ -42,6 +45,7 @@ if ( post_password_required() ) {
 
 ?>
 </div>
+<div class="right-side">
 	<div class="summary entry-summary test">
 		<?php
 		/**
@@ -59,7 +63,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
-
+</div>
 
 <div class="three-images">
 	<?php 

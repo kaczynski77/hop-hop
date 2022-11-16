@@ -193,7 +193,22 @@ display: none;
   position: sticky;
   width: 100vw;
 align-items: center;
+font-size: 18px;
+padding-top: 10px;
 }
+
+#header a {
+  font-size: inherit;
+  color: black
+}
+
+
+
+.right-side {
+      width: 50%;
+    display: flex;
+}
+
 
 .single #header {
   position: absolute;
@@ -208,6 +223,16 @@ span {
 .woocommerce .woocommerce-breadcrumb {
   margin-left: 16px;
 }
+
+#header .woocommerce-breadcrumb {
+  color: transparent;
+  font-size: inherit;
+}
+
+#header .woocommerce-breadcrumb a:nth-child(1),
+#header .woocommerce-breadcrumb a:nth-child(2),
+#header .woocommerce-breadcrumb a:nth-child(3)
+{display: none;}
 
 .single .woocommerce-breadcrumb {
   display: flex;
